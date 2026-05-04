@@ -327,190 +327,205 @@ export default function Mui() {
         </Box>
       </Box>
 
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", flexDirection: "column" }}>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box
+            sx={{
+              bgcolor: "black",
+              width: "100%",
+              marginTop: "50px",
+              height: { xs: "fit-content", md: "500px" },
+              padding: { xs: "20px", md: "150px" },
+
+              backgroundImage: `url(${smile})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "relative",
+            }}
+          >
+            <Box
+              sx={{
+                position: "absolute",
+                inset: "0",
+                right: "0",
+                bottom: "0",
+                left: "0",
+                background: "black",
+                opacity: "0.5",
+              }}
+            />
+            <Typography
+              variant="h3"
+              gutterBottom
+              sx={{
+                maxWidth: "100%",
+                color: "white",
+                outlineColor: "black",
+                textAlign: "center",
+                lineHeight: "80px",
+                fontSize: "4rem",
+                position: "relative",
+                zIndex: "1",
+              }}
+            >
+              {" "}
+              " Not all of us can do greate things but we can do all small
+              things with greate love"
+            </Typography>
+            <Button
+              variant="contained"
+              sx={{
+                background: "black",
+                borderRadius: "20px",
+                position: "relative",
+                zIndex: "1",
+                paddingInline: "40px",
+                paddingBlock: "10px",
+              }}
+            >
+              join our family
+            </Button>
+          </Box>
+        </Box>
+
         <Box
           sx={{
-            bgcolor: "black",
             width: "100%",
-            marginBlock: "50px",
-            height: { xs: "fit-content", md: "500px" },
-            padding: { xs: "20px", md: "150px" },
-
-            backgroundImage: `url(${smile})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
+            height: "fitContent",
+            bgcolor: "black",
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            position: "relative",
           }}
         >
           <Box
             sx={{
-              position: "absolute",
-              inset: "0",
-              right: "0",
-              bottom: "0",
-              left: "0",
-              background: "black",
-              opacity: "0.5",
-            }}
-          />
-          <Typography
-            variant="h3"
-            gutterBottom
-            sx={{
-              maxWidth: "100%",
-              color: "white",
-              outlineColor: "black",
-              textAlign: "center",
-              lineHeight: "80px",
-              fontSize: "4rem",
-              position: "relative",
-              zIndex: "1",
+              padding: "20px",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: { xs: "column", md: "row" },
+              gap: "50px",
             }}
           >
-            {" "}
-            " Not all of us can do greate things but we can do all small things
-            with greate love"
-          </Typography>
-          <Button
-            variant="contained"
-            sx={{
-              background: "black",
-              borderRadius: "20px",
-              position: "relative",
-              zIndex: "1",
-              paddingInline: "40px",
-              paddingBlock: "10px",
-            }}
-          >
-            join our family
-          </Button>
-        </Box>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+              }}
+            >
+              <Typography
+                variant="h6"
+                sx={{ color: "white", marginBlock: "10px" }}
+              >
+                Quick links
+              </Typography>
+              <Button sx={{ color: "white" }}>Home</Button>
+              <Button sx={{ color: "white" }}>Shop product</Button>
+              <Button sx={{ color: "white" }}>About us</Button>
+              <Button sx={{ color: "white" }}>Blog</Button>
+            </Box>
 
-        {/*
-
-       <Box
-        sx={{
-          width: "100%",
-          height: "fitContent",
-          bgcolor: "black",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        
-
-
-        <Box
-          sx={{
-            margin: "90px",
-            display: "flex",
-
-            justifyContent: { md: "space-between", xs: "center" },
-          }}
-        >
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+              }}
+            >
+              <Typography
+                variant="h6"
+                sx={{ color: "white", marginBlock: "10px" }}
+              >
+                Help
+              </Typography>
+              <Button sx={{ color: "white" }}>Contact us</Button>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+              }}
+            >
+              <Typography
+                variant="h6"
+                sx={{ color: "white", marginBlock: "10px" }}
+              >
+                Get in touch
+              </Typography>
+              <Typography
+                gutterBottom
+                sx={{ color: "white", maxWidth: "300px" }}
+              >
+                {} our team atre available moday to friday, 9am till 6pm
+              </Typography>
+              <Typography gutterBottom sx={{ color: "white" }}>
+                call us on 08023564788{" "}
+              </Typography>
+              <Typography sx={{ color: "white" }}>
+                Email us at emmbbd@gmail.com
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+              }}
+            >
+              <Typography variant="h6" sx={{ color: "white" }}>
+                connect with us on social media
+              </Typography>
+            </Box>
+          </Box>
           <Box
             sx={{
               display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
+              justifyItems: "",
             }}
           >
             <Typography
-              variant="h6"
-              sx={{ color: "white", marginBlock: "10px" }}
+              variant="h1"
+              sx={{
+                color: "#FFFFF7",
+                maxWidth: "800px",
+                borderBottom: { md: "3px solid white", xs: "none" },
+                paddingBottom: "20px",
+                marginLeft: { xs: "20px", md: "70px" },
+                textAlign: "start",
+              }}
             >
-              Quick links
+              MAKE LOVE GO VIRAL.{" "}
             </Typography>
-            <Button sx={{ color: "white" }}>Home</Button>
-            <Button sx={{ color: "white" }}>Shop product</Button>
-            <Button sx={{ color: "white" }}>About us</Button>
-            <Button sx={{ color: "white" }}>Blog</Button>
           </Box>
 
           <Box
             sx={{
               display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-            }}
-          >
-            <Typography
-              variant="h6"
-              sx={{ color: "white", marginBlock: "10px" }}
-            >
-              Help
-            </Typography>
-            <Button sx={{ color: "white" }}>Contact us</Button>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-            }}
-          >
-            <Typography
-              variant="h6"
-              sx={{ color: "white", marginBlock: "10px" }}
-            >
-              Quick links
-            </Typography>
-            <Typography gutterBottom sx={{ color: "white", maxWidth: "300px" }}>
-              our team atre available moday to friday, 9am till 6pm
-            </Typography>
-            <Typography gutterBottom sx={{ color: "white" }}>
-              call us on 08023564788{" "}
-            </Typography>
-            <Typography sx={{ color: "white" }}>
-              Email us at emmbbd@gmail.com
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-            }}
-          >
-            <Typography variant="h6" sx={{ color: "white" }}>
-              connect with us on social media
-            </Typography>
-          </Box>
-        </Box>
-        <Box
-          sx={{ display: "flex", justifyItems: "center", marginInline: "auto" }}
-        >
-          <Typography
-            variant="h1"
-            sx={{
-              color: "#FFFFF7",
-              maxWidth: "800px",
-              borderBottom: "3px solid white",
-              paddingBottom: "20px",
-            }}
-          >
-            MAKE LOVE GO VIRAL.{" "}
-          </Typography>
-        </Box>
+              gap: "20px",
+              paddingInline: "30px",
+              marginBlock: "20px",
+              marginLeft: { xs: "20px", md: "100px" },
 
-        <Box
-          sx={{
-            display: "flex",
-            gap: "20px",
-            marginLeft: "90px",
-            marginBlock: "20px",
-          }}
-        >
-          <Typography sx={{ color: "white" }}>Make love go viral</Typography>
-          <Button sx={{ color: "white" }}>Terms & condition</Button>
-          <Button sx={{ color: "white" }}>Privacy policy</Button>
-          <Button sx={{ color: "white" }}>Cookie policy</Button>
+              alignItems: "center",
+            }}
+          >
+            <Typography sx={{ color: "white" }}>Make love go viral</Typography>
+            <Box
+              sx={{
+                display: { xs: "none", md: "block" },
+              }}
+            >
+              <Button sx={{ color: "white" }}>Terms & condition</Button>
+              <Button sx={{ color: "white" }}>Privacy policy</Button>
+              <Button sx={{ color: "white" }}>Cookie policy</Button>
+            </Box>
+          </Box>
         </Box>
-      </Box> */}
       </Box>
     </>
   );
