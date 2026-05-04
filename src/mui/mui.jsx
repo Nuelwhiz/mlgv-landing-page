@@ -514,7 +514,9 @@ export default function Mui() {
               alignItems: "center",
             }}
           >
-            <Typography sx={{ color: "white" }}>Make love go viral</Typography>
+            <Typography sx={{ color: "whitesmoke" }}>
+              Make love go viral
+            </Typography>
             <Box
               sx={{
                 display: { xs: "none", md: "block" },
