@@ -44,7 +44,7 @@ export default function Mui() {
         <Box
           sx={{
             width: "100%",
-            height: "600px",
+            height: "fit-content",
 
             bgcolor: "black",
             marginTop: "10px",
@@ -53,6 +53,10 @@ export default function Mui() {
             backgroundPosition: "center",
             backgroundSize: "cover",
             position: "relative",
+            padding: "30px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "50px",
           }}
         >
           <Box
@@ -64,8 +68,80 @@ export default function Mui() {
               left: "0",
               background: "black",
               opacity: "0.5",
+              borderRadius: "20px",
             }}
           />
+
+          <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+            <Box
+              component="img"
+              src={logo}
+              alt=""
+              sx={{
+                height: { md: "", xs: "" },
+                width: { md: "70px", xs: "60px" },
+                position: "relative",
+                zIndex: "1",
+                borderRadius: "",
+              }}
+            />
+            <Button sx={{ display: { xs: "block", md: "none" } }}></Button>
+            <Box
+              sx={{
+                display: "flex",
+                position: "relative",
+                zIndex: "1",
+                display: { xs: "none", md: "block" },
+              }}
+            >
+              <Button sx={{ color: "whitesmoke" }}>Videos</Button>
+              <Button sx={{ color: "whitesmoke" }}>About us</Button>
+              <Button sx={{ color: "whitesmoke" }}>Shop</Button>
+              <Button sx={{ color: "whitesmoke" }}>Support us</Button>
+              <Button sx={{ color: "whitesmoke" }}>Our movement</Button>
+            </Box>
+            <Button
+              variant="contained"
+              sx={{ display: { xs: "none", md: "block" } }}
+            >
+              Be a part of us
+            </Button>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "30px",
+            }}
+          >
+            <Typography
+              variant="h1"
+              sx={{
+                color: "white",
+                position: "relative",
+                zIndex: "1",
+                textAlign: "center",
+                maxWidth: "500px",
+              }}
+            >
+              Make Love Go Viral
+            </Typography>
+            <Typography
+              sx={{
+                color: "white",
+                position: "relative",
+                zIndex: "1",
+                maxWidth: { xs: "300px", md: "420px" },
+                textAlign: "center",
+              }}
+            >
+              A global movements inspiring millions to heal the world with acts
+              of love, kindness and positivity
+            </Typography>
+            <Button variant="contained">bggfg</Button>
+          </Box>
         </Box>
 
         <Box
