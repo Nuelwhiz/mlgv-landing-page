@@ -86,6 +86,7 @@ export default function Mui() {
               }}
             />
             <Button sx={{ display: { xs: "block", md: "none" } }}></Button>
+
             <Box
               sx={{
                 display: "flex",
@@ -100,11 +101,21 @@ export default function Mui() {
               <Button sx={{ color: "whitesmoke" }}>Support us</Button>
               <Button sx={{ color: "whitesmoke" }}>Our movement</Button>
             </Box>
+
             <Button
               variant="contained"
-              sx={{ display: { xs: "none", md: "block" } }}
+              sx={{
+                background: "rgba(225, 225, 225, 0.15)",
+                borderRadius: "20px",
+                position: "relative",
+                zIndex: "1",
+                paddingInline: "40px",
+                paddingBlock: "10px",
+                display: { xs: "none", md: "block" },
+                textTransform: "none",
+              }}
             >
-              Be a part of us
+              Join our family
             </Button>
           </Box>
           <Box
@@ -140,7 +151,19 @@ export default function Mui() {
               A global movements inspiring millions to heal the world with acts
               of love, kindness and positivity
             </Typography>
-            <Button variant="contained">bggfg</Button>
+            <Button
+              variant="contained"
+              sx={{
+                background: "rgba(225, 225, 225, 0.15)",
+                borderRadius: "20px",
+                position: "relative",
+                zIndex: "1",
+                paddingInline: "40px",
+                paddingBlock: "10px",
+              }}
+            >
+              join our family
+            </Button>
           </Box>
         </Box>
 
@@ -448,14 +471,14 @@ export default function Mui() {
                 zIndex: "1",
               }}
             >
-              {" "}
+              
               " Not all of us can do greate things but we can do all small
               things with greate love"
             </Typography>
             <Button
               variant="contained"
               sx={{
-                background: "black",
+                background: "rgba(225, 225, 225, 0.15)",
                 borderRadius: "20px",
                 position: "relative",
                 zIndex: "1",
