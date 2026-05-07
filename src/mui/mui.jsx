@@ -18,6 +18,9 @@ import {
   CardActionArea,
   Stack,
 } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+
+import MenuIcon from "@mui/icons-material/Menu";
 import "../App.css";
 import logo from "../images/logo.png";
 import hero from "../images/hero-bg.png";
@@ -85,7 +88,14 @@ export default function Mui() {
                 borderRadius: "",
               }}
             />
-            <Button sx={{ display: { xs: "block", md: "none" } }}></Button>
+            <IconButton
+              sx={{
+                display: { xs: "block", md: "none" },
+                color: "white",
+              }}
+            >
+              <MenuIcon sx={{ fontSize: "40px" }} />
+            </IconButton>
 
             <Box
               sx={{
@@ -465,13 +475,13 @@ export default function Mui() {
                 color: "white",
                 outlineColor: "black",
                 textAlign: "center",
-                lineHeight: "80px",
+                lineHeight: { xs: "50px", md: "80px" },
                 fontSize: "4rem",
                 position: "relative",
                 zIndex: "1",
+                fontSize: { xs: "2rem", md: "4rem" },
               }}
             >
-              
               " Not all of us can do greate things but we can do all small
               things with greate love"
             </Typography>
