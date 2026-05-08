@@ -94,7 +94,7 @@ export default function Mui() {
                 color: "white",
               }}
             >
-              <MenuIcon sx={{ fontSize: "40px" }} />
+              <MenuIcon sx={{ fontSize: "45px" }} />
             </IconButton>
 
             <Box
@@ -145,7 +145,7 @@ export default function Mui() {
                 zIndex: "1",
                 textAlign: "center",
                 maxWidth: "500px",
-                fontSize: { xs: "4rem", md: "6rem" },
+                fontSize: { xs: "4.32rem", md: "6rem" },
               }}
             >
               Make Love Go Viral
@@ -157,6 +157,7 @@ export default function Mui() {
                 zIndex: "1",
                 maxWidth: { xs: "300px", md: "420px" },
                 textAlign: "center",
+                fontSize: { xs: "1.2rem", md: "1rem" },
               }}
             >
               A global movements inspiring millions to heal the world with acts
@@ -171,6 +172,7 @@ export default function Mui() {
                 zIndex: "1",
                 paddingInline: "40px",
                 paddingBlock: "10px",
+                textAlign: "center",
               }}
             >
               join our family
@@ -192,7 +194,7 @@ export default function Mui() {
             variant="h4"
             color="text.primary"
             gutterBottom
-            sx={{ maxWidth: { xs: "350px", md: "550px" } }}
+            sx={{ maxWidth: { xs: "350px", md: "550px" }, textAlign: "center" }}
           >
             Our mission is simple, to inspire everyone to love just like Christ
           </Typography>
