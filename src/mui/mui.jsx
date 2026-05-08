@@ -145,6 +145,7 @@ export default function Mui() {
                 zIndex: "1",
                 textAlign: "center",
                 maxWidth: "500px",
+                fontSize: { xs: "4rem", md: "6rem" },
               }}
             >
               Make Love Go Viral
@@ -570,10 +571,10 @@ export default function Mui() {
                 gutterBottom
                 sx={{ color: "white", maxWidth: "300px" }}
               >
-                {} our team atre available moday to friday, 9am till 6pm
+                our team atre available moday to friday, 9am till 6pm
               </Typography>
               <Typography gutterBottom sx={{ color: "white" }}>
-                call us on 08023564788{" "}
+                call us on 08023564786
               </Typography>
               <Typography sx={{ color: "white" }}>
                 Email us at emmbbd@gmail.com
