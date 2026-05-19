@@ -1,6 +1,8 @@
 import React from "react";
 import cardData from "./cardsData";
 import CustomCard from "./cads";
+import "@fontsource/playfair-display";
+import "@fontsource/poppins";
 import {
   AppBar,
   Toolbar,
@@ -19,7 +21,6 @@ import {
   Stack,
 } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
-
 import MenuIcon from "@mui/icons-material/Menu";
 import "../App.css";
 import logo from "../images/logo.png";
@@ -91,7 +92,7 @@ export default function Mui() {
             <IconButton
               sx={{
                 display: { xs: "block", md: "none" },
-                color: "white",
+                color: "whitesmoke",
               }}
             >
               <MenuIcon sx={{ fontSize: "45px" }} />
@@ -105,11 +106,11 @@ export default function Mui() {
                 display: { xs: "none", md: "block" },
               }}
             >
-              <Button sx={{ color: "whitesmoke" }}>Videos</Button>
-              <Button sx={{ color: "whitesmoke" }}>About us</Button>
-              <Button sx={{ color: "whitesmoke" }}>Shop</Button>
-              <Button sx={{ color: "whitesmoke" }}>Support us</Button>
-              <Button sx={{ color: "whitesmoke" }}>Our movement</Button>
+              <Button sx={{ color: "white" }}>Videos</Button>
+              <Button sx={{ color: "white" }}>About us</Button>
+              <Button sx={{ color: "white" }}>Shop</Button>
+              <Button sx={{ color: "white" }}>Support us</Button>
+              <Button sx={{ color: "white" }}>Our movement</Button>
             </Box>
 
             <Button
@@ -122,7 +123,6 @@ export default function Mui() {
                 paddingInline: "40px",
                 paddingBlock: "10px",
                 display: { xs: "none", md: "block" },
-                textTransform: "none",
               }}
             >
               Join our family
@@ -146,6 +146,7 @@ export default function Mui() {
                 textAlign: "center",
                 maxWidth: "500px",
                 fontSize: { xs: "4.32rem", md: "6rem" },
+                fontFamily: "Playfair Display, serif",
               }}
             >
               Make Love Go Viral
@@ -158,6 +159,7 @@ export default function Mui() {
                 maxWidth: { xs: "300px", md: "420px" },
                 textAlign: "center",
                 fontSize: { xs: "1.2rem", md: "1rem" },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               A global movements inspiring millions to heal the world with acts
@@ -194,7 +196,11 @@ export default function Mui() {
             variant="h4"
             color="text.primary"
             gutterBottom
-            sx={{ maxWidth: { xs: "350px", md: "550px" }, textAlign: "center" }}
+            sx={{
+              maxWidth: { xs: "350px", md: "550px" },
+              textAlign: "center",
+              fontFamily: "Poppins, sans-serif",
+            }}
           >
             Our mission is simple, to inspire everyone to love just like Christ
           </Typography>
@@ -247,6 +253,7 @@ export default function Mui() {
             sx={{
               color: "white",
               textAlign: { xs: "center", md: "start" },
+              fontFamily: "Playfair Display, serif",
             }}
           >
             Watch the movement
@@ -257,6 +264,7 @@ export default function Mui() {
               fontSize: "1.5rem",
               color: "white",
               textAlign: { xs: "center", md: "start" },
+              fontFamily: "Poppins, sans-serif",
             }}
           >
             Watch real moment of our faith videos, outreaches and share in our
@@ -316,6 +324,7 @@ export default function Mui() {
                 },
                 fontSize: "3rem",
                 textAlign: { xs: "center", md: "start" },
+                fontFamily: "Playfair Display, serif",
               }}
             >
               Join our growing family
@@ -324,6 +333,7 @@ export default function Mui() {
               sx={{
                 maxWidth: "350px",
                 textAlign: { xs: "center", md: "start" },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               A family of people choosing love, support one another and growing
@@ -349,6 +359,7 @@ export default function Mui() {
                 maxWidth: "300px",
                 color: "white",
                 textAlign: { xs: "center", md: "start" },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               Grow interntionanly with God
@@ -358,6 +369,7 @@ export default function Mui() {
                 maxWidth: { md: "350px", color: "white" },
                 marginBlock: { xs: "20px", md: "0" },
                 textAlign: { xs: "center", md: "start" },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               help you grown into a abetter Christian through intentional daily
@@ -395,6 +407,7 @@ export default function Mui() {
                 maxWidth: "250px",
                 color: "white",
                 textAlign: { xs: "center", md: "start" },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               Go back to the community
@@ -407,6 +420,7 @@ export default function Mui() {
                 color: "white",
                 textAlign: { xs: "center", md: "start" },
                 marginBlock: { xs: "20px", md: "0" },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               take part in real outreach programms from school visit to
@@ -483,6 +497,7 @@ export default function Mui() {
                 position: "relative",
                 zIndex: "1",
                 fontSize: { xs: "2rem", md: "4rem" },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               " Not all of us can do greate things but we can do all small
@@ -573,7 +588,7 @@ export default function Mui() {
                 gutterBottom
                 sx={{ color: "white", maxWidth: "300px" }}
               >
-                our team atre available moday to friday, 9am till 6pm
+                our team are available moday to friday, 9am till 6pm
               </Typography>
               <Typography gutterBottom sx={{ color: "white" }}>
                 call us on 08023564786

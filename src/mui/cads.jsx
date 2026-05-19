@@ -7,6 +7,8 @@ import {
   Button,
   CssBaseline,
 } from "@mui/material";
+import "@fontsource/playfair-display";
+
 export default function CustomCard({ image, title, discription }) {
   return (
     <>
@@ -35,7 +37,7 @@ export default function CustomCard({ image, title, discription }) {
             }}
           />
           <CardContent sx={{ color: "white" }}>
-            <Typography gutterBottom variant="h6" component="div">
+            <Typography gutterBottom variant="h6" component="div" sx={{}}>
               {title}
             </Typography>
             <Typography variant="body2" sx={{}}>
